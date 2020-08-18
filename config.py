@@ -1,6 +1,9 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
 
-API_TOKEN = '1173239815:AAF2PNgChG-elV35VahkCiKExt04HF27_as'
+API_TOKEN = os.getenv('API_TOKEN')
 
 WEBHOOK_HOST = 'https://example.com'
 WEBHOOK_PATH = '/webhook/' + API_TOKEN
